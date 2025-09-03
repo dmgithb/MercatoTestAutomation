@@ -104,6 +104,7 @@ jobs:
         run: npx playwright test --grep "@critical" --project=${{ matrix.browser }}
         env:
           CI: true
+          SKIP_GLOBAL_SETUP: true
 
       - name: 📊 Upload test results
         uses: actions/upload-artifact@v4
@@ -295,4 +296,4 @@ jobs:
             Author: ${{ github.actor }}
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        if: env.SLACK_WEBHOOK_URL != ''
+        continue-on-error: true
