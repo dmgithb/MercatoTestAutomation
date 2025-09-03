@@ -282,18 +282,67 @@ jobs:
     name: 📢 Notifications
     runs-on: ubuntu-latest
     needs: [critical-tests, full-tests]
-    if: always() && (github.event_name == 'push' || github.event_name == 'schedule')
+    if: always() && (github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
     steps:
-      - name: 📢 Slack notification
+      - name: 📢 Slack notification - Success
         uses: 8398a7/action-slack@v3
+        if: needs.critical-tests.result == 'success' && needs.full-tests.result == 'success'
+        with:
+          status: success
+          channel: '#test-automation'
+          color: good
+          text: |
+            ✅ **Playwright Tests PASSED** 
+            🌿 Branch: `${{ github.ref_name }}`
+            👤 Author: ${{ github.actor }}
+            🔗 Workflow: ${{ github.run_id }}
+            📊 All tests completed successfully!
+            
+            📋 Test Summary:
+            • Critical Tests: ✅ Passed
+            • Full Test Suite: ✅ Passed
+            • Browsers: Chrome, Firefox, Safari, Edge + Mobile
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true
+
+      - name: 📢 Slack notification - Failure
+        uses: 8398a7/action-slack@v3
+        if: needs.critical-tests.result == 'failure' || needs.full-tests.result == 'failure'
+        with:
+          status: failure
+          channel: '#test-automation'
+          color: danger
+          text: |
+            ❌ **Playwright Tests FAILED**
+            🌿 Branch: `${{ github.ref_name }}`
+            👤 Author: ${{ github.actor }}
+            🔗 Workflow: ${{ github.run_id }}
+            🚨 Immediate attention required!
+            
+            📋 Test Results:
+            • Critical Tests: ${{ needs.critical-tests.result == 'success' && '✅ Passed' || '❌ Failed' }}
+            • Full Test Suite: ${{ needs.full-tests.result == 'success' && '✅ Passed' || '❌ Failed' }}
+            
+            🔍 Check details: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true
+
+      - name: 📢 Slack notification - Manual Trigger
+        uses: 8398a7/action-slack@v3
+        if: github.event_name == 'workflow_dispatch'
         with:
           status: ${{ job.status }}
           channel: '#test-automation'
+          color: ${{ job.status == 'success' && 'good' || 'warning' }}
           text: |
-            🧪 Playwright Tests: ${{ job.status }}
-            Branch: ${{ github.ref }}
-            Commit: ${{ github.sha }}
-            Author: ${{ github.actor }}
+            🎯 **Manual Test Execution** - ${{ job.status == 'success' && 'COMPLETED' || 'FAILED' }}
+            🌿 Branch: `${{ github.ref_name }}`
+            👤 Triggered by: ${{ github.actor }}
+            🌐 Browser: `${{ github.event.inputs.browser || 'all' }}`
+            📦 Test Suite: `${{ github.event.inputs.test_suite || 'full' }}`
+            🔗 Results: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         continue-on-error: true

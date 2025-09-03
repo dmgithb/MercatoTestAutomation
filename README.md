@@ -317,6 +317,35 @@ The comprehensive pipeline includes multiple specialized jobs:
 - **Scheduled Runs**: Daily full regression at 2 AM UTC
 - **Manual Triggers**: On-demand execution with parameter selection
 
+### Slack Notifications 🔔
+
+Get real-time notifications about test results in your Slack workspace:
+
+#### **Quick Setup (5 minutes):**
+1. **Create Slack Webhook**: https://api.slack.com/apps → Create App → Incoming Webhooks
+2. **Add to GitHub Secrets**: Repository Settings → Secrets → `SLACK_WEBHOOK_URL`
+3. **Choose Channel**: `#test-automation` (or your preferred channel)
+
+#### **Notification Types:**
+- ✅ **Success**: All tests passed with summary
+- ❌ **Failure**: Failed tests with direct links to logs
+- 🎯 **Manual Triggers**: Real-time manual execution updates
+
+#### **Sample Notification:**
+```
+✅ Playwright Tests PASSED
+🌿 Branch: main | 👤 Author: dmgithb
+📊 All tests completed successfully!
+
+📋 Test Summary:
+• Critical Tests: ✅ Passed
+• Full Test Suite: ✅ Passed  
+• Browsers: Chrome, Firefox, Safari, Edge + Mobile
+```
+
+📚 **Detailed Setup Guide**: [`docs/SLACK-SETUP.md`](docs/SLACK-SETUP.md)
+🧪 **Test Webhook**: `node scripts/test-slack-webhook.js YOUR_WEBHOOK_URL`
+
 ### Parallel Execution and Sharding
 
 ```yaml

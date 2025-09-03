@@ -1,703 +1,882 @@
-<testsuites id="" name="" tests="16" failures="5" skipped="0" errors="0" time="336.444541">
-<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="chromium" tests="1" failures="1" skipped="0" time="107.509" errors="0">
-<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="107.509">
-<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
-<![CDATA[  [chromium] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ──────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\error-context.md
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\trace.zip]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\error-context.md]]
-]]>
-</system-out>
+<testsuites id="" name="" tests="192" failures="0" skipped="192" errors="0" time="0.0977220000000001">
+<testsuite name="authentication.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="chromium" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@critical User Authentication › [TC-AUTH-001] @critical Login dialog displays correctly" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-002] @critical Login form accepts user input" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-003] @critical Login form validation for empty fields" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-004] @critical Forgot password link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-005] @critical Sign up link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.582" errors="0">
-<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="5.582">
-<system-out>
-<![CDATA[[STEP] 2025-09-03T05:05:43.762Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:05:43.764Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:05:43.925Z: Essential homepage elements verified
-✅ HomePage test passed
-]]>
-</system-out>
+<testsuite name="basic-functionality.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-001] @smoke Homepage accessibility and basic elements" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-002] @smoke User menu and login dialog" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-003] @smoke Search functionality" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-004] @smoke Category navigation" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="firefox" tests="1" failures="1" skipped="0" time="112.149" errors="0">
-<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="112.149">
-<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
-<![CDATA[  [firefox] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ───────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry2\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry2\error-context.md
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\trace.zip]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry2\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry2\error-context.md]]
-]]>
-</system-out>
+<testsuite name="category-navigation.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-001] @smoke Living Room category page loads correctly" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-002] @smoke Category filters are functional" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-003] @smoke Search functionality with different terms" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-004] @regression Product pagination functionality" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="firefox" tests="1" failures="0" skipped="0" time="50.08" errors="0">
-<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="50.08">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-firefox\video.webm]]
-[STEP] 2025-09-03T05:06:36.405Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:06:36.406Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:06:36.730Z: Essential homepage elements verified
-✅ HomePage test passed
-
-[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-firefox-retry1\trace.zip]]
-]]>
-</system-out>
+<testsuite name="core-functionality.fixed.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="chromium" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-001] @smoke Homepage loads correctly" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-002] @smoke User menu and login dialog work" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-003] @smoke Search functionality works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-004] @smoke Category navigation works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-005] @smoke Basic filter visibility" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="webkit" tests="1" failures="1" skipped="0" time="116.382" errors="0">
-<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="116.382">
-<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
-<![CDATA[  [webkit] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry2\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry2\error-context.md
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\trace.zip]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry2\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry2\error-context.md]]
-]]>
-</system-out>
+<testsuite name="homepage.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="chromium" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-001] @critical Homepage loads with all essential elements" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-002] @critical Product search functionality works correctly" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-003] @critical User menu and login dialog functionality" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-004] @critical Navigation menu categories are functional" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="webkit" tests="1" failures="0" skipped="0" time="28.81" errors="0">
-<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="28.81">
-<system-out>
-<![CDATA[[STEP] 2025-09-03T05:07:12.998Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:07:13.000Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:07:13.568Z: Essential homepage elements verified
-✅ HomePage test passed
-]]>
-</system-out>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="mobile-chrome" tests="1" failures="1" skipped="0" time="119.107" errors="0">
-<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="119.107">
-<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
-<![CDATA[  [mobile-chrome] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ─────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\error-context.md
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\trace.zip]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\error-context.md]]
-]]>
-</system-out>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="4.428" errors="0">
-<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="4.428">
-<system-out>
-<![CDATA[[STEP] 2025-09-03T05:07:57.989Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:07:57.991Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:07:58.202Z: Essential homepage elements verified
-✅ HomePage test passed
-]]>
-</system-out>
+<testsuite name="authentication.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="firefox" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@critical User Authentication › [TC-AUTH-001] @critical Login dialog displays correctly" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-002] @critical Login form accepts user input" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-003] @critical Login form validation for empty fields" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-004] @critical Forgot password link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-005] @critical Sign up link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="mobile-safari" tests="1" failures="0" skipped="0" time="80.454" errors="0">
-<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="80.454">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-safari\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-safari\error-context.md]]
-✅ Basic test passed
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-safari-retry1\trace.zip]]
-]]>
-</system-out>
+<testsuite name="basic-functionality.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="firefox" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-001] @smoke Homepage accessibility and basic elements" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-002] @smoke User menu and login dialog" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-003] @smoke Search functionality" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-004] @smoke Category navigation" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="mobile-safari" tests="1" failures="0" skipped="0" time="54.17" errors="0">
-<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="54.17">
-<system-out>
-<![CDATA[[STEP] 2025-09-03T05:08:39.954Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:08:39.956Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:08:40.121Z: Essential homepage elements verified
-✅ HomePage test passed
-
-[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-mobile-safari\video.webm]]
-
-[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-mobile-safari\error-context.md]]
-[STEP] 2025-09-03T05:08:52.479Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:08:52.480Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:08:55.487Z: Essential homepage elements verified
-✅ HomePage test passed
-
-[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-mobile-safari-retry1\trace.zip]]
-]]>
-</system-out>
+<testsuite name="category-navigation.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="firefox" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-001] @smoke Living Room category page loads correctly" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-002] @smoke Category filters are functional" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-003] @smoke Search functionality with different terms" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-004] @regression Product pagination functionality" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="edge" tests="1" failures="1" skipped="0" time="118.762" errors="0">
-<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="118.762">
-<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
-<![CDATA[  [edge] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ──────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\error-context.md
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    TimeoutError: page.goto: Timeout 30000ms exceeded.
-    Call log:
-      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
-
-
-      2 |
-      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
-    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
-        |              ^
-      5 |   const title = await page.title();
-      6 |   expect(title).toContain('Jupiter');
-      7 |   console.log('✅ Basic test passed');
-        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\error-context.md
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\error-context.md]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\trace.zip]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\error-context.md]]
-]]>
-</system-out>
+<testsuite name="core-functionality.fixed.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="firefox" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-001] @smoke Homepage loads correctly" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-002] @smoke User menu and login dialog work" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-003] @smoke Search functionality works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-004] @smoke Category navigation works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-005] @smoke Basic filter visibility" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="edge" tests="1" failures="0" skipped="0" time="16.314" errors="0">
-<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="16.314">
-<system-out>
-<![CDATA[[STEP] 2025-09-03T05:09:19.933Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:09:19.943Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:09:20.854Z: Essential homepage elements verified
-✅ HomePage test passed
-]]>
-</system-out>
+<testsuite name="homepage.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="firefox" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-001] @critical Homepage loads with all essential elements" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-002] @critical Product search functionality works correctly" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-003] @critical User menu and login dialog functionality" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-004] @critical Navigation menu categories are functional" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="desktop-high-res" tests="1" failures="0" skipped="0" time="65.585" errors="0">
-<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="65.585">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-desktop-high-res\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-desktop-high-res\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-desktop-high-res\error-context.md]]
-✅ Basic test passed
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-desktop-high-res-retry1\trace.zip]]
-]]>
-</system-out>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="desktop-high-res" tests="1" failures="0" skipped="0" time="5.2" errors="0">
-<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="5.2">
-<system-out>
-<![CDATA[[STEP] 2025-09-03T05:09:34.621Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:09:34.624Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:09:34.882Z: Essential homepage elements verified
-✅ HomePage test passed
-]]>
-</system-out>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="tablet" tests="1" failures="0" skipped="0" time="61.609" errors="0">
-<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="61.609">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-tablet\test-failed-1.png]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-tablet\video.webm]]
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-tablet\error-context.md]]
-✅ Basic test passed
-
-[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-tablet-retry1\trace.zip]]
-]]>
-</system-out>
+<testsuite name="authentication.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="webkit" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@critical User Authentication › [TC-AUTH-001] @critical Login dialog displays correctly" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-002] @critical Login form accepts user input" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-003] @critical Login form validation for empty fields" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-004] @critical Forgot password link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-005] @critical Sign up link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
-<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="tablet" tests="1" failures="0" skipped="0" time="15.005" errors="0">
-<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="15.005">
-<system-out>
-<![CDATA[[STEP] 2025-09-03T05:09:55.764Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
-[STEP] 2025-09-03T05:09:55.767Z: Navigated to Jupiter homepage
-[STEP] 2025-09-03T05:09:56.618Z: Essential homepage elements verified
-✅ HomePage test passed
-]]>
-</system-out>
+<testsuite name="basic-functionality.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="webkit" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-001] @smoke Homepage accessibility and basic elements" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-002] @smoke User menu and login dialog" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-003] @smoke Search functionality" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-004] @smoke Category navigation" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="category-navigation.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="webkit" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-001] @smoke Living Room category page loads correctly" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-002] @smoke Category filters are functional" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-003] @smoke Search functionality with different terms" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-004] @regression Product pagination functionality" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="core-functionality.fixed.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="webkit" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-001] @smoke Homepage loads correctly" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-002] @smoke User menu and login dialog work" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-003] @smoke Search functionality works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-004] @smoke Category navigation works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-005] @smoke Basic filter visibility" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="webkit" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-001] @critical Homepage loads with all essential elements" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-002] @critical Product search functionality works correctly" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-003] @critical User menu and login dialog functionality" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-004] @critical Navigation menu categories are functional" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="authentication.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-chrome" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@critical User Authentication › [TC-AUTH-001] @critical Login dialog displays correctly" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-002] @critical Login form accepts user input" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-003] @critical Login form validation for empty fields" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-004] @critical Forgot password link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-005] @critical Sign up link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-chrome" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-001] @smoke Homepage accessibility and basic elements" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-002] @smoke User menu and login dialog" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-003] @smoke Search functionality" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-004] @smoke Category navigation" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="category-navigation.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-chrome" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-001] @smoke Living Room category page loads correctly" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-002] @smoke Category filters are functional" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-003] @smoke Search functionality with different terms" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-004] @regression Product pagination functionality" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="core-functionality.fixed.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-chrome" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-001] @smoke Homepage loads correctly" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-002] @smoke User menu and login dialog work" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-003] @smoke Search functionality works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-004] @smoke Category navigation works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-005] @smoke Basic filter visibility" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-chrome" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-001] @critical Homepage loads with all essential elements" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-002] @critical Product search functionality works correctly" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-003] @critical User menu and login dialog functionality" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-004] @critical Navigation menu categories are functional" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-chrome" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-chrome" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="authentication.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-safari" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@critical User Authentication › [TC-AUTH-001] @critical Login dialog displays correctly" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-002] @critical Login form accepts user input" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-003] @critical Login form validation for empty fields" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-004] @critical Forgot password link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-005] @critical Sign up link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-safari" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-001] @smoke Homepage accessibility and basic elements" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-002] @smoke User menu and login dialog" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-003] @smoke Search functionality" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-004] @smoke Category navigation" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="category-navigation.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-safari" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-001] @smoke Living Room category page loads correctly" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-002] @smoke Category filters are functional" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-003] @smoke Search functionality with different terms" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-004] @regression Product pagination functionality" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="core-functionality.fixed.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-safari" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-001] @smoke Homepage loads correctly" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-002] @smoke User menu and login dialog work" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-003] @smoke Search functionality works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-004] @smoke Category navigation works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-005] @smoke Basic filter visibility" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-safari" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-001] @critical Homepage loads with all essential elements" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-002] @critical Product search functionality works correctly" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-003] @critical User menu and login dialog functionality" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-004] @critical Navigation menu categories are functional" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-safari" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="mobile-safari" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="authentication.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="edge" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@critical User Authentication › [TC-AUTH-001] @critical Login dialog displays correctly" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-002] @critical Login form accepts user input" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-003] @critical Login form validation for empty fields" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-004] @critical Forgot password link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-005] @critical Sign up link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="edge" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-001] @smoke Homepage accessibility and basic elements" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-002] @smoke User menu and login dialog" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-003] @smoke Search functionality" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-004] @smoke Category navigation" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="category-navigation.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="edge" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-001] @smoke Living Room category page loads correctly" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-002] @smoke Category filters are functional" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-003] @smoke Search functionality with different terms" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-004] @regression Product pagination functionality" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="core-functionality.fixed.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="edge" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-001] @smoke Homepage loads correctly" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-002] @smoke User menu and login dialog work" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-003] @smoke Search functionality works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-004] @smoke Category navigation works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-005] @smoke Basic filter visibility" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="edge" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-001] @critical Homepage loads with all essential elements" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-002] @critical Product search functionality works correctly" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-003] @critical User menu and login dialog functionality" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-004] @critical Navigation menu categories are functional" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="edge" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="edge" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="authentication.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="desktop-high-res" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@critical User Authentication › [TC-AUTH-001] @critical Login dialog displays correctly" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-002] @critical Login form accepts user input" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-003] @critical Login form validation for empty fields" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-004] @critical Forgot password link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-005] @critical Sign up link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="desktop-high-res" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-001] @smoke Homepage accessibility and basic elements" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-002] @smoke User menu and login dialog" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-003] @smoke Search functionality" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-004] @smoke Category navigation" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="category-navigation.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="desktop-high-res" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-001] @smoke Living Room category page loads correctly" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-002] @smoke Category filters are functional" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-003] @smoke Search functionality with different terms" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-004] @regression Product pagination functionality" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="core-functionality.fixed.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="desktop-high-res" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-001] @smoke Homepage loads correctly" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-002] @smoke User menu and login dialog work" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-003] @smoke Search functionality works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-004] @smoke Category navigation works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-005] @smoke Basic filter visibility" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="desktop-high-res" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-001] @critical Homepage loads with all essential elements" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-002] @critical Product search functionality works correctly" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-003] @critical User menu and login dialog functionality" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-004] @critical Navigation menu categories are functional" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="desktop-high-res" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="desktop-high-res" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="authentication.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="tablet" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@critical User Authentication › [TC-AUTH-001] @critical Login dialog displays correctly" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-002] @critical Login form accepts user input" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-003] @critical Login form validation for empty fields" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-004] @critical Forgot password link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical User Authentication › [TC-AUTH-005] @critical Sign up link navigation" classname="authentication.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="basic-functionality.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="tablet" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-001] @smoke Homepage accessibility and basic elements" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-002] @smoke User menu and login dialog" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-003] @smoke Search functionality" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Basic Functionality Verification › [TC-BASIC-004] @smoke Category navigation" classname="basic-functionality.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="category-navigation.smoke.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="tablet" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-001] @smoke Living Room category page loads correctly" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-002] @smoke Category filters are functional" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-003] @smoke Search functionality with different terms" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Category Navigation and Product Browsing › [TC-CAT-004] @regression Product pagination functionality" classname="category-navigation.smoke.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="core-functionality.fixed.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="tablet" tests="5" failures="0" skipped="5" time="0" errors="0">
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-001] @smoke Homepage loads correctly" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-002] @smoke User menu and login dialog work" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-003] @smoke Search functionality works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-004] @smoke Category navigation works" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@smoke Core Functionality Tests › [TC-CORE-005] @smoke Basic filter visibility" classname="core-functionality.fixed.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="homepage.critical.spec.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="tablet" tests="4" failures="0" skipped="4" time="0" errors="0">
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-001] @critical Homepage loads with all essential elements" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-002] @critical Product search functionality works correctly" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-003] @critical User menu and login dialog functionality" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="@critical Homepage Core Functionality › [TC-HOME-004] @critical Navigation menu categories are functional" classname="homepage.critical.spec.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="tablet" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="0">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T06:04:58.728Z" hostname="tablet" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="0">
+<skipped>
+</skipped>
 </testcase>
 </testsuite>
 </testsuites>
