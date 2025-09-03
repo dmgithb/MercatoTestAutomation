@@ -1,0 +1,703 @@
+<testsuites id="" name="" tests="16" failures="5" skipped="0" errors="0" time="336.444541">
+<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="chromium" tests="1" failures="1" skipped="0" time="107.509" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="107.509">
+<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
+<![CDATA[  [chromium] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ──────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry1\trace.zip]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-chromium-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.582" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="5.582">
+<system-out>
+<![CDATA[[STEP] 2025-09-03T05:05:43.762Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:05:43.764Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:05:43.925Z: Essential homepage elements verified
+✅ HomePage test passed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="firefox" tests="1" failures="1" skipped="0" time="112.149" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="112.149">
+<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
+<![CDATA[  [firefox] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ───────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry1\trace.zip]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry2\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-firefox-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="firefox" tests="1" failures="0" skipped="0" time="50.08" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="50.08">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-firefox\video.webm]]
+[STEP] 2025-09-03T05:06:36.405Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:06:36.406Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:06:36.730Z: Essential homepage elements verified
+✅ HomePage test passed
+
+[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-firefox-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="webkit" tests="1" failures="1" skipped="0" time="116.382" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="116.382">
+<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
+<![CDATA[  [webkit] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry1\trace.zip]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry2\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-webkit-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="webkit" tests="1" failures="0" skipped="0" time="28.81" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="28.81">
+<system-out>
+<![CDATA[[STEP] 2025-09-03T05:07:12.998Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:07:13.000Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:07:13.568Z: Essential homepage elements verified
+✅ HomePage test passed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="mobile-chrome" tests="1" failures="1" skipped="0" time="119.107" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="119.107">
+<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
+<![CDATA[  [mobile-chrome] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ─────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry1\trace.zip]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-chrome-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="4.428" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="4.428">
+<system-out>
+<![CDATA[[STEP] 2025-09-03T05:07:57.989Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:07:57.991Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:07:58.202Z: Essential homepage elements verified
+✅ HomePage test passed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="mobile-safari" tests="1" failures="0" skipped="0" time="80.454" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="80.454">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-safari\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-safari\error-context.md]]
+✅ Basic test passed
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-mobile-safari-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="mobile-safari" tests="1" failures="0" skipped="0" time="54.17" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="54.17">
+<system-out>
+<![CDATA[[STEP] 2025-09-03T05:08:39.954Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:08:39.956Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:08:40.121Z: Essential homepage elements verified
+✅ HomePage test passed
+
+[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-mobile-safari\video.webm]]
+
+[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-mobile-safari\error-context.md]]
+[STEP] 2025-09-03T05:08:52.479Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:08:52.480Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:08:55.487Z: Essential homepage elements verified
+✅ HomePage test passed
+
+[[ATTACHMENT|test-homepage--TC-SETUP-002-Test-minimal-HomePage-mobile-safari-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="edge" tests="1" failures="1" skipped="0" time="118.762" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="118.762">
+<failure message="simple.test.ts:3:5 [TC-SETUP-001] Simple test to check setup" type="FAILURE">
+<![CDATA[  [edge] › simple.test.ts:3:5 › [TC-SETUP-001] Simple test to check setup ──────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 30000ms exceeded.
+
+    TimeoutError: page.goto: Timeout 30000ms exceeded.
+    Call log:
+      - navigating to "http://qa.mercato-retailer-jupiter.local/", waiting until "load"
+
+
+      2 |
+      3 | test('[TC-SETUP-001] Simple test to check setup', async ({ page }) => {
+    > 4 |   await page.goto('http://qa.mercato-retailer-jupiter.local/');
+        |              ^
+      5 |   const title = await page.title();
+      6 |   expect(title).toContain('Jupiter');
+      7 |   console.log('✅ Basic test passed');
+        at D:\mercato_Automation\tests\specs\simple.test.ts:4:14
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\error-context.md]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry1\trace.zip]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-edge-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="edge" tests="1" failures="0" skipped="0" time="16.314" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="16.314">
+<system-out>
+<![CDATA[[STEP] 2025-09-03T05:09:19.933Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:09:19.943Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:09:20.854Z: Essential homepage elements verified
+✅ HomePage test passed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="desktop-high-res" tests="1" failures="0" skipped="0" time="65.585" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="65.585">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-desktop-high-res\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-desktop-high-res\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-desktop-high-res\error-context.md]]
+✅ Basic test passed
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-desktop-high-res-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="desktop-high-res" tests="1" failures="0" skipped="0" time="5.2" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="5.2">
+<system-out>
+<![CDATA[[STEP] 2025-09-03T05:09:34.621Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:09:34.624Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:09:34.882Z: Essential homepage elements verified
+✅ HomePage test passed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="simple.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="tablet" tests="1" failures="0" skipped="0" time="61.609" errors="0">
+<testcase name="[TC-SETUP-001] Simple test to check setup" classname="simple.test.ts" time="61.609">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-tablet\test-failed-1.png]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-tablet\video.webm]]
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-tablet\error-context.md]]
+✅ Basic test passed
+
+[[ATTACHMENT|simple--TC-SETUP-001-Simple-test-to-check-setup-tablet-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="test-homepage.test.ts" timestamp="2025-09-03T05:05:37.898Z" hostname="tablet" tests="1" failures="0" skipped="0" time="15.005" errors="0">
+<testcase name="[TC-SETUP-002] Test minimal HomePage" classname="test-homepage.test.ts" time="15.005">
+<system-out>
+<![CDATA[[STEP] 2025-09-03T05:09:55.764Z: Navigated to: http://qa.mercato-retailer-jupiter.local/
+[STEP] 2025-09-03T05:09:55.767Z: Navigated to Jupiter homepage
+[STEP] 2025-09-03T05:09:56.618Z: Essential homepage elements verified
+✅ HomePage test passed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

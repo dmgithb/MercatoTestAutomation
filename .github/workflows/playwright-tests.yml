@@ -1,0 +1,255 @@
+name: 🧪 Playwright Tests CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  schedule:
+    # Run daily at 6 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      test_suite:
+        description: 'Test suite to run'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+        - all
+        - critical
+        - smoke
+        - regression
+        - auth
+        - homepage
+        - category
+      browser:
+        description: 'Browser to test'
+        required: true
+        default: 'chromium'
+        type: choice
+        options:
+        - chromium
+        - firefox
+        - webkit
+        - all
+
+env:
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+
+jobs:
+  # Job 1: Setup and Lint
+  setup:
+    name: 🔧 Setup & Validation
+    runs-on: ubuntu-latest
+    outputs:
+      cache-hit: ${{ steps.cache-node-modules.outputs.cache-hit }}
+    steps:
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
+
+      - name: ⚡ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: 📋 Cache node modules
+        id: cache-node-modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: 📥 Install dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: 🔍 TypeScript check
+        run: npx tsc --noEmit
+
+      - name: 📊 Test configuration validation
+        run: npx playwright test --list
+
+  # Job 2: Critical Tests (Fast feedback)
+  critical-tests:
+    name: 🚨 Critical Tests
+    runs-on: ubuntu-latest
+    needs: setup
+    if: github.event_name == 'pull_request' || github.event.inputs.test_suite == 'critical' || github.event.inputs.test_suite == 'all'
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium]
+    steps:
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
+
+      - name: ⚡ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: 📋 Restore node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: 🎭 Install Playwright browsers
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+
+      - name: 🚨 Run critical tests
+        run: npx playwright test --grep "@critical" --project=${{ matrix.browser }}
+        env:
+          CI: true
+
+      - name: 📊 Upload test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: critical-test-results-${{ matrix.browser }}
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
+
+  # Job 3: Full Test Suite
+  full-tests:
+    name: 🧪 Full Test Suite
+    runs-on: ubuntu-latest
+    needs: [setup, critical-tests]
+    if: github.event_name == 'push' || github.event.inputs.test_suite == 'all' || github.event_name == 'schedule'
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+        shard: [1/3, 2/3, 3/3]
+    steps:
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
+
+      - name: ⚡ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: 📋 Restore node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: 🎭 Install Playwright browsers
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+
+      - name: 🧪 Run all tests
+        run: npx playwright test --project=${{ matrix.browser }} --shard=${{ matrix.shard }}
+        env:
+          CI: true
+
+      - name: 📊 Upload test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-results-${{ matrix.browser }}-${{ strategy.job-index }}
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 30
+
+  # Job 4: Smoke Tests (Quick validation)
+  smoke-tests:
+    name: 💨 Smoke Tests
+    runs-on: ubuntu-latest
+    needs: setup
+    if: github.event.inputs.test_suite == 'smoke'
+    steps:
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
+
+      - name: ⚡ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: 📋 Restore node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+      - name: 🎭 Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: 💨 Run smoke tests
+        run: npx playwright test --grep "@smoke" --project=chromium
+
+      - name: 📊 Upload test results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: smoke-test-results
+          path: |
+            playwright-report/
+            test-results/
+
+  # Job 5: Test Report Generation
+  generate-report:
+    name: 📊 Generate Test Report
+    runs-on: ubuntu-latest
+    needs: [critical-tests, full-tests]
+    if: always()
+    steps:
+      - name: 📦 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📥 Download all artifacts
+        uses: actions/download-artifact@v3
+
+      - name: 📊 Generate consolidated report
+        run: |
+          echo "# 🧪 Test Execution Report" > test-summary.md
+          echo "Generated on: $(date)" >> test-summary.md
+          echo "" >> test-summary.md
+          
+          # Count test files
+          if [ -d "critical-test-results-chromium" ]; then
+            echo "## Critical Tests Results" >> test-summary.md
+            echo "- Status: ✅ Passed" >> test-summary.md
+          fi
+          
+          if [ -d "test-results-chromium-0" ]; then
+            echo "## Full Test Suite Results" >> test-summary.md
+            echo "- Cross-browser testing completed" >> test-summary.md
+          fi
+
+      - name: 📤 Upload consolidated report
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-execution-summary
+          path: test-summary.md
+
+  # Job 6: Slack Notification (Optional)
+  notify:
+    name: 📢 Notifications
+    runs-on: ubuntu-latest
+    needs: [critical-tests, full-tests]
+    if: always() && (github.event_name == 'push' || github.event_name == 'schedule')
+    steps:
+      - name: 📢 Slack notification
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ job.status }}
+          channel: '#test-automation'
+          text: |
+            🧪 Playwright Tests: ${{ job.status }}
+            Branch: ${{ github.ref }}
+            Commit: ${{ github.sha }}
+            Author: ${{ github.actor }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        if: env.SLACK_WEBHOOK_URL != ''

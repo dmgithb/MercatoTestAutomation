@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  # Main test runner
+  playwright-tests:
+    build: .
+    container_name: mercato-playwright
+    volumes:
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report
+    environment:
+      - BASE_URL=http://qa.mercato-retailer-jupiter.local/
+      - HEADLESS=true
+      - CI=true
+    networks:
+      - test-network
+    command: npm test
+
+  # Critical tests only
+  playwright-critical:
+    build: .
+    container_name: mercato-playwright-critical
+    volumes:
+      - ./test-results:/app/test-results
+      - ./playwright-report:/app/playwright-report
+    environment:
+      - BASE_URL=http://qa.mercato-retailer-jupiter.local/
+      - HEADLESS=true
+      - CI=true
+    networks:
+      - test-network
+    command: npm run test:critical
+
+  # Report server
+  report-server:
+    build: .
+    container_name: mercato-report-server
+    ports:
+      - "9323:9323"
+    volumes:
+      - ./playwright-report:/app/playwright-report
+    networks:
+      - test-network
+    command: npm run report:open
+
+  # Test data preparation (if needed)
+  test-data-setup:
+    image: postgres:13
+    container_name: test-database
+    environment:
+      POSTGRES_DB: test_db
+      POSTGRES_USER: test_user
+      POSTGRES_PASSWORD: test_pass
+    ports:
+      - "5432:5432"
+    networks:
+      - test-network
+    volumes:
+      - test-data:/var/lib/postgresql/data
+
+networks:
+  test-network:
+    driver: bridge
+
+volumes:
+  test-data:

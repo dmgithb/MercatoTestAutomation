@@ -1,0 +1,750 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e8]:
+          - textbox "Find products by name or sku..." [ref=e9]
+          - button "Search" [ref=e10] [cursor=pointer]:
+            - img [ref=e11] [cursor=pointer]
+          - button "Close search" [ref=e14] [cursor=pointer]:
+            - img [ref=e15] [cursor=pointer]
+        - button "Toggle mobile menu" [ref=e18] [cursor=pointer]
+        - link "Mercato Logo Jupiter" [ref=e20] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e21] [cursor=pointer]:
+            - img "Mercato Logo" [ref=e22] [cursor=pointer]
+            - generic [ref=e23] [cursor=pointer]: Jupiter
+        - generic [ref=e24]:
+          - button "Search" [ref=e25] [cursor=pointer]:
+            - img [ref=e28] [cursor=pointer]
+          - button "User" [ref=e31] [cursor=pointer]:
+            - img [ref=e34] [cursor=pointer]
+      - navigation [ref=e38]:
+        - list [ref=e39]:
+          - listitem [ref=e40]:
+            - button "Living Room" [ref=e42] [cursor=pointer]:
+              - text: Living Room
+              - img [ref=e43] [cursor=pointer]
+          - listitem [ref=e45]:
+            - button "Dining Room" [ref=e47] [cursor=pointer]:
+              - text: Dining Room
+              - img [ref=e48] [cursor=pointer]
+          - listitem [ref=e50]:
+            - button "Bedroom" [ref=e52] [cursor=pointer]:
+              - text: Bedroom
+              - img [ref=e53] [cursor=pointer]
+          - listitem [ref=e55]:
+            - button "Home Office" [ref=e57] [cursor=pointer]:
+              - text: Home Office
+              - img [ref=e58] [cursor=pointer]
+          - listitem [ref=e60]:
+            - button "Home Decor" [ref=e62] [cursor=pointer]:
+              - text: Home Decor
+              - img [ref=e63] [cursor=pointer]
+          - listitem [ref=e65]:
+            - link "Contact Us" [ref=e66] [cursor=pointer]:
+              - /url: /contact-us
+          - listitem [ref=e67]:
+            - link "About Us" [ref=e68] [cursor=pointer]:
+              - /url: /about-us
+          - listitem [ref=e69]:
+            - link "Brands" [ref=e70] [cursor=pointer]:
+              - /url: /brands
+    - generic [ref=e71]:
+      - generic "Homepage Sliders" [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e75]:
+            - img "living" [ref=e76]
+            - generic [ref=e78]:
+              - heading "Living" [level=2] [ref=e79]
+              - paragraph [ref=e80]: Design the Heart of Your Home with Timeless Pieces
+              - link "Explore Living Piece" [ref=e81] [cursor=pointer]:
+                - /url: /categories/living-room
+          - generic [ref=e83]:
+            - img "outdoor" [ref=e84]
+            - generic [ref=e86]:
+              - heading "Outdoor" [level=2] [ref=e87]
+              - paragraph [ref=e88]: Furniture and Decor Built for the Great Outdoors
+              - link "Discover More" [ref=e89] [cursor=pointer]:
+                - /url: /categories/living-room-outdoor
+          - generic [ref=e91]:
+            - img "Slide 3" [ref=e92]
+            - generic [ref=e94]:
+              - heading "Bedroom" [level=2] [ref=e95]
+              - paragraph [ref=e96]: Transforming Bedrooms into Personal Retreats
+              - link "Explore Collection" [ref=e97] [cursor=pointer]:
+                - /url: /categories/bedroom
+          - generic [ref=e99]:
+            - img "Slide 4" [ref=e100]
+            - generic [ref=e102]:
+              - heading "Chairs" [level=2] [ref=e103]
+              - paragraph [ref=e104]: Sit in Style – Versatile Chairs for Any Room
+              - link "Shop Chairs" [ref=e105] [cursor=pointer]:
+                - /url: /categories/living-room-chairs
+        - generic [ref=e106]:
+          - button "Previous slide" [ref=e107] [cursor=pointer]:
+            - generic [ref=e108] [cursor=pointer]: ❮
+          - generic [ref=e109]:
+            - button "Go to slide 1" [ref=e110] [cursor=pointer]
+            - button "Go to slide 2" [ref=e111] [cursor=pointer]
+            - button "Go to slide 3" [ref=e112] [cursor=pointer]
+            - button "Go to slide 4" [ref=e113] [cursor=pointer]
+          - button "Next slide" [ref=e114] [cursor=pointer]:
+            - generic [ref=e115] [cursor=pointer]: ❯
+      - generic [ref=e118]:
+        - generic [ref=e119]:
+          - link [ref=e121] [cursor=pointer]:
+            - /url: /brands/hooker
+          - link [ref=e125] [cursor=pointer]:
+            - /url: /brands/ambella-home
+          - link [ref=e129] [cursor=pointer]:
+            - /url: /brands/chaddock
+          - link [ref=e133] [cursor=pointer]:
+            - /url: /brands/hickory-white
+          - link [ref=e137] [cursor=pointer]:
+            - /url: /brands/sherrill-occasional
+          - link [ref=e141] [cursor=pointer]:
+            - /url: /brands/chelsea-house
+          - link [ref=e145] [cursor=pointer]:
+            - /url: /brands/wildwood-home
+          - link [ref=e149] [cursor=pointer]:
+            - /url: /brands/feizy
+          - link [ref=e153] [cursor=pointer]:
+            - /url: /brands/hf-custom
+          - link [ref=e157] [cursor=pointer]:
+            - /url: /brands/massoud-furniture
+          - link [ref=e161] [cursor=pointer]:
+            - /url: /brands/woodbridge-furniture
+          - link [ref=e165] [cursor=pointer]:
+            - /url: /brands/vanguard-furniture
+          - link [ref=e169] [cursor=pointer]:
+            - /url: /brands/phillips-collection
+          - link [ref=e173] [cursor=pointer]:
+            - /url: /brands/visual-comfort
+          - link [ref=e177] [cursor=pointer]:
+            - /url: /brands/flexsteel
+          - link [ref=e181] [cursor=pointer]:
+            - /url: /brands/sunset-west
+        - generic [ref=e184]:
+          - link [ref=e186] [cursor=pointer]:
+            - /url: /brands/hooker
+          - link [ref=e190] [cursor=pointer]:
+            - /url: /brands/ambella-home
+          - link [ref=e194] [cursor=pointer]:
+            - /url: /brands/chaddock
+          - link [ref=e198] [cursor=pointer]:
+            - /url: /brands/hickory-white
+          - link [ref=e202] [cursor=pointer]:
+            - /url: /brands/sherrill-occasional
+          - link [ref=e206] [cursor=pointer]:
+            - /url: /brands/chelsea-house
+          - link [ref=e210] [cursor=pointer]:
+            - /url: /brands/wildwood-home
+          - link [ref=e214] [cursor=pointer]:
+            - /url: /brands/feizy
+          - link [ref=e218] [cursor=pointer]:
+            - /url: /brands/hf-custom
+          - link [ref=e222] [cursor=pointer]:
+            - /url: /brands/massoud-furniture
+          - link [ref=e226] [cursor=pointer]:
+            - /url: /brands/woodbridge-furniture
+          - link [ref=e230] [cursor=pointer]:
+            - /url: /brands/vanguard-furniture
+          - link [ref=e234] [cursor=pointer]:
+            - /url: /brands/phillips-collection
+          - link [ref=e238] [cursor=pointer]:
+            - /url: /brands/visual-comfort
+          - link [ref=e242] [cursor=pointer]:
+            - /url: /brands/flexsteel
+          - link [ref=e246] [cursor=pointer]:
+            - /url: /brands/sunset-west
+      - generic [ref=e250]:
+        - heading "Shop By Category" [level=2] [ref=e251]
+        - generic [ref=e252]:
+          - link "Living" [ref=e254] [cursor=pointer]:
+            - /url: /categories/living-room
+            - generic [ref=e256] [cursor=pointer]: Living
+          - link "Outdoor" [ref=e258] [cursor=pointer]:
+            - /url: /categories/living-room-outdoor
+            - generic [ref=e260] [cursor=pointer]: Outdoor
+          - link "Bedroom" [ref=e262] [cursor=pointer]:
+            - /url: /categories/bedroom
+            - generic [ref=e264] [cursor=pointer]: Bedroom
+          - link "Decor" [ref=e266] [cursor=pointer]:
+            - /url: /categories/home-decor
+            - generic [ref=e268] [cursor=pointer]: Decor
+          - link "Dinning Room" [ref=e270] [cursor=pointer]:
+            - /url: /categories/dining-room
+            - generic [ref=e272] [cursor=pointer]: Dinning Room
+          - link "Home Office" [ref=e274] [cursor=pointer]:
+            - /url: /categories/home-office
+            - generic [ref=e276] [cursor=pointer]: Home Office
+          - link "Chair" [ref=e278] [cursor=pointer]:
+            - /url: /categories/living-room-chairs
+            - generic [ref=e280] [cursor=pointer]: Chair
+      - generic [ref=e283]:
+        - heading "Outdoor Chairs" [level=2] [ref=e284]
+        - paragraph [ref=e285]: Explore Stylish & Durable Seating for Every Outdoor Space
+        - link "Come See Us!" [ref=e286] [cursor=pointer]:
+          - /url: /products/sutton-desk-chair
+          - button "Come See Us!" [ref=e287] [cursor=pointer]:
+            - generic [ref=e289] [cursor=pointer]: Come See Us!
+      - generic [ref=e291]:
+        - generic [ref=e292]:
+          - heading "Featured Products" [level=2] [ref=e293]
+          - generic [ref=e294]:
+            - button "Previous products" [ref=e295] [cursor=pointer]:
+              - img [ref=e296] [cursor=pointer]
+            - button "Next products" [ref=e298] [cursor=pointer]:
+              - img [ref=e299] [cursor=pointer]
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - generic [ref=e303]:
+              - link "Malibu Dining Chair":
+                - /url: /products/malibu-dining-chair
+                - img "Malibu Dining Chair" [ref=e304] [cursor=pointer]
+              - button [ref=e305] [cursor=pointer]:
+                - img [ref=e306] [cursor=pointer]
+              - button "Add to compare" [ref=e308] [cursor=pointer]:
+                - img [ref=e309] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e310]:
+              - generic [ref=e311]: Sunset West
+              - heading "Malibu Dining Chair" [level=3] [ref=e312]:
+                - link "Malibu Dining Chair" [ref=e313] [cursor=pointer]:
+                  - /url: /products/malibu-dining-chair
+              - generic [ref=e315]: SW7101-1
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - link "Sedona Armless Dining Chair":
+                - /url: /products/sedona-armless-dining-chair
+                - img "Sedona Armless Dining Chair" [ref=e318] [cursor=pointer]
+              - button [ref=e319] [cursor=pointer]:
+                - img [ref=e320] [cursor=pointer]
+              - button "Add to compare" [ref=e322] [cursor=pointer]:
+                - img [ref=e323] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e324]:
+              - generic [ref=e325]: Sunset West
+              - heading "Sedona Armless Dining Chair" [level=3] [ref=e326]:
+                - link "Sedona Armless Dining Chair" [ref=e327] [cursor=pointer]:
+                  - /url: /products/sedona-armless-dining-chair
+              - generic [ref=e329]: SW5502-1A
+          - generic [ref=e330]:
+            - generic [ref=e331]:
+              - link "Dune End Table":
+                - /url: /products/dune-end-table
+                - img "Dune End Table" [ref=e332] [cursor=pointer]
+              - button [ref=e333] [cursor=pointer]:
+                - img [ref=e334] [cursor=pointer]
+              - button "Add to compare" [ref=e336] [cursor=pointer]:
+                - img [ref=e337] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e338]:
+              - generic [ref=e339]: Sunset West
+              - heading "Dune End Table" [level=3] [ref=e340]:
+                - link "Dune End Table" [ref=e341] [cursor=pointer]:
+                  - /url: /products/dune-end-table
+              - generic [ref=e343]: 7207-ET
+          - generic [ref=e344]:
+            - generic [ref=e345]:
+              - link "Playa Barstool":
+                - /url: /products/playa-barstool
+                - img "Playa Barstool" [ref=e346] [cursor=pointer]
+              - button [ref=e347] [cursor=pointer]:
+                - img [ref=e348] [cursor=pointer]
+              - button "Add to compare" [ref=e350] [cursor=pointer]:
+                - img [ref=e351] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e352]:
+              - generic [ref=e353]: Sunset West
+              - heading "Playa Barstool" [level=3] [ref=e354]:
+                - link "Playa Barstool" [ref=e355] [cursor=pointer]:
+                  - /url: /products/playa-barstool
+              - generic [ref=e357]: SW7001-7B
+          - generic [ref=e358]:
+            - generic [ref=e359]:
+              - link "Playa Sofa":
+                - /url: /products/playa-sofa
+                - img "Playa Sofa" [ref=e360] [cursor=pointer]
+              - button [ref=e361] [cursor=pointer]:
+                - img [ref=e362] [cursor=pointer]
+              - button "Add to compare" [ref=e364] [cursor=pointer]:
+                - img [ref=e365] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e366]:
+              - generic [ref=e367]: Sunset West
+              - heading "Playa Sofa" [level=3] [ref=e368]:
+                - link "Playa Sofa" [ref=e369] [cursor=pointer]:
+                  - /url: /products/playa-sofa
+              - generic [ref=e371]: SW7001-23
+          - generic [ref=e372]:
+            - generic [ref=e373]:
+              - link "Cabo Barstool":
+                - /url: /products/cabo-barstool
+                - img "Cabo Barstool" [ref=e374] [cursor=pointer]
+              - button [ref=e375] [cursor=pointer]:
+                - img [ref=e376] [cursor=pointer]
+              - button "Add to compare" [ref=e378] [cursor=pointer]:
+                - img [ref=e379] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e380]:
+              - generic [ref=e381]: Sunset West
+              - heading "Cabo Barstool" [level=3] [ref=e382]:
+                - link "Cabo Barstool" [ref=e383] [cursor=pointer]:
+                  - /url: /products/cabo-barstool
+              - generic [ref=e385]: SW8001-7B
+          - generic [ref=e386]:
+            - generic [ref=e387]:
+              - link "Antique Stone Square Coffee Table":
+                - /url: /products/antique-stone-square-coffee-table
+                - img "Antique Stone Square Coffee Table" [ref=e388] [cursor=pointer]
+              - button [ref=e389] [cursor=pointer]:
+                - img [ref=e390] [cursor=pointer]
+              - button "Add to compare" [ref=e392] [cursor=pointer]:
+                - img [ref=e393] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e394]:
+              - generic [ref=e395]: Sunset West
+              - heading "Antique Stone Square Coffee Table" [level=3] [ref=e396]:
+                - link "Antique Stone Square Coffee Table" [ref=e397] [cursor=pointer]:
+                  - /url: /products/antique-stone-square-coffee-table
+              - generic [ref=e399]: SW6204-SQCT
+          - generic [ref=e400]:
+            - generic [ref=e401]:
+              - link "Antique Stone Rectangle Coffee Table":
+                - /url: /products/antique-stone-rectangle-coffee-table
+                - img "Antique Stone Rectangle Coffee Table" [ref=e402] [cursor=pointer]
+              - button [ref=e403] [cursor=pointer]:
+                - img [ref=e404] [cursor=pointer]
+              - button "Add to compare" [ref=e406] [cursor=pointer]:
+                - img [ref=e407] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e408]:
+              - generic [ref=e409]: Sunset West
+              - heading "Antique Stone Rectangle Coffee Table" [level=3] [ref=e410]:
+                - link "Antique Stone Rectangle Coffee Table" [ref=e411] [cursor=pointer]:
+                  - /url: /products/antique-stone-rectangle-coffee-table
+              - generic [ref=e413]: SW6204-RECCT
+          - generic [ref=e414]:
+            - generic [ref=e415]:
+              - link "Pebble Coffee Table in Bone":
+                - /url: /products/pebble-coffee-table-in-bone
+                - img "Pebble Coffee Table in Bone" [ref=e416] [cursor=pointer]
+              - button [ref=e417] [cursor=pointer]:
+                - img [ref=e418] [cursor=pointer]
+              - button "Add to compare" [ref=e420] [cursor=pointer]:
+                - img [ref=e421] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e422]:
+              - generic [ref=e423]: Sunset West
+              - heading "Pebble Coffee Table in Bone" [level=3] [ref=e424]:
+                - link "Pebble Coffee Table in Bone" [ref=e425] [cursor=pointer]:
+                  - /url: /products/pebble-coffee-table-in-bone
+              - generic [ref=e427]: SW6205-PCT
+          - generic [ref=e428]:
+            - generic [ref=e429]:
+              - link "loading":
+                - /url: /products/pebble-end-table-in-bone
+                - generic [ref=e430] [cursor=pointer]:
+                  - alert "loading" [ref=e431] [cursor=pointer]
+                  - img [ref=e434] [cursor=pointer]
+              - button [ref=e443] [cursor=pointer]:
+                - img [ref=e444] [cursor=pointer]
+              - button "Add to compare" [ref=e446] [cursor=pointer]:
+                - img [ref=e447] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e448]:
+              - generic [ref=e449]: Sunset West
+              - heading "Pebble End Table in Bone" [level=3] [ref=e450]:
+                - link "Pebble End Table in Bone" [ref=e451] [cursor=pointer]:
+                  - /url: /products/pebble-end-table-in-bone
+              - generic [ref=e453]: SW6205-PET
+          - generic [ref=e454]:
+            - generic [ref=e455]:
+              - link "Sedona Sofa":
+                - /url: /products/sedona-sofa
+                - img "Sedona Sofa" [ref=e456] [cursor=pointer]
+              - button [ref=e457] [cursor=pointer]:
+                - img [ref=e458] [cursor=pointer]
+              - button "Add to compare" [ref=e460] [cursor=pointer]:
+                - img [ref=e461] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e462]:
+              - generic [ref=e463]: Sunset West
+              - heading "Sedona Sofa" [level=3] [ref=e464]:
+                - link "Sedona Sofa" [ref=e465] [cursor=pointer]:
+                  - /url: /products/sedona-sofa
+              - generic [ref=e466]:
+                - generic [ref=e467]: SW5502-23
+                - generic [ref=e468]: Retry
+          - generic [ref=e470]:
+            - generic [ref=e471]:
+              - link "Sedona Barstool":
+                - /url: /products/sedona-barstool
+                - img "Sedona Barstool" [ref=e472] [cursor=pointer]
+              - button [ref=e473] [cursor=pointer]:
+                - img [ref=e474] [cursor=pointer]
+              - button "Add to compare" [ref=e476] [cursor=pointer]:
+                - img [ref=e477] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e478]:
+              - generic [ref=e479]: Sunset West
+              - heading "Sedona Barstool" [level=3] [ref=e480]:
+                - link "Sedona Barstool" [ref=e481] [cursor=pointer]:
+                  - /url: /products/sedona-barstool
+              - generic [ref=e483]: SW5502-7B
+          - generic [ref=e484]:
+            - generic [ref=e485]:
+              - link "loading":
+                - /url: /products/laguna-90-120-extension-dining-table
+                - generic [ref=e486] [cursor=pointer]:
+                  - alert "loading" [ref=e487] [cursor=pointer]
+                  - img [ref=e490] [cursor=pointer]
+              - button [ref=e499] [cursor=pointer]:
+                - img [ref=e500] [cursor=pointer]
+              - button "Add to compare" [ref=e502] [cursor=pointer]:
+                - img [ref=e503] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e504]:
+              - generic [ref=e505]: Sunset West
+              - heading "Laguna 90-120\" Extension Dining Table" [level=3] [ref=e506]:
+                - link "Laguna 90-120\" Extension Dining Table" [ref=e507] [cursor=pointer]:
+                  - /url: /products/laguna-90-120-extension-dining-table
+              - generic [ref=e509]: SW3501-T90-120
+          - generic [ref=e510]:
+            - generic [ref=e511]:
+              - link "loading":
+                - /url: /products/newport-extension-dining-table
+                - generic [ref=e512] [cursor=pointer]:
+                  - alert "loading" [ref=e513] [cursor=pointer]
+                  - img [ref=e516] [cursor=pointer]
+              - button [ref=e525] [cursor=pointer]:
+                - img [ref=e526] [cursor=pointer]
+              - button "Add to compare" [ref=e528] [cursor=pointer]:
+                - img [ref=e529] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e530]:
+              - generic [ref=e531]: Sunset West
+              - heading "Newport Extension Dining Table" [level=3] [ref=e532]:
+                - link "Newport Extension Dining Table" [ref=e533] [cursor=pointer]:
+                  - /url: /products/newport-extension-dining-table
+              - generic [ref=e535]: SW4801-T90-120
+          - generic [ref=e536]:
+            - generic [ref=e537]:
+              - link "loading":
+                - /url: /products/sabbia-loveseat
+                - generic [ref=e538] [cursor=pointer]:
+                  - alert "loading" [ref=e539] [cursor=pointer]
+                  - img [ref=e542] [cursor=pointer]
+              - button [ref=e551] [cursor=pointer]:
+                - img [ref=e552] [cursor=pointer]
+              - button "Add to compare" [ref=e554] [cursor=pointer]:
+                - img [ref=e555] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e556]:
+              - generic [ref=e557]: Sunset West
+              - heading "Sabbia Loveseat" [level=3] [ref=e558]:
+                - link "Sabbia Loveseat" [ref=e559] [cursor=pointer]:
+                  - /url: /products/sabbia-loveseat
+              - generic [ref=e561]: SW4901-22
+          - generic [ref=e562]:
+            - generic [ref=e563]:
+              - link "loading":
+                - /url: /products/hooker-furniture-living-room-nelson-zero-gravity-power-sofa-with-power-headrests-and-lumbar
+                - generic [ref=e564] [cursor=pointer]:
+                  - alert "loading" [ref=e565] [cursor=pointer]
+                  - img [ref=e568] [cursor=pointer]
+              - button [ref=e577] [cursor=pointer]:
+                - img [ref=e578] [cursor=pointer]
+              - button "Add to compare" [ref=e580] [cursor=pointer]:
+                - img [ref=e581] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e582]:
+              - generic [ref=e583]: Hooker
+              - heading "Hooker Furniture Living Room Nelson Zero Gravity Power Sofa with Power Headrests and Lumbar" [level=3] [ref=e584]:
+                - link "Hooker Furniture Living Room Nelson Zero Gravity Power Sofa with Power Headrests and Lumbar" [ref=e585] [cursor=pointer]:
+                  - /url: /products/hooker-furniture-living-room-nelson-zero-gravity-power-sofa-with-power-headrests-and-lumbar
+              - generic [ref=e587]: SS836-PHZL3-070
+          - generic [ref=e588]:
+            - generic [ref=e589]:
+              - link "loading":
+                - /url: /products/hooker-furniture-living-room-nelson-zero-gravity-power-sofa-with-power-headrest-and-lumbar
+                - generic [ref=e590] [cursor=pointer]:
+                  - alert "loading" [ref=e591] [cursor=pointer]
+                  - img [ref=e594] [cursor=pointer]
+              - button [ref=e603] [cursor=pointer]:
+                - img [ref=e604] [cursor=pointer]
+              - button "Add to compare" [ref=e606] [cursor=pointer]:
+                - img [ref=e607] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e608]:
+              - generic [ref=e609]: Hooker
+              - heading "Hooker Furniture Living Room Nelson Zero Gravity Power Sofa with Power Headrest and Lumbar" [level=3] [ref=e610]:
+                - link "Hooker Furniture Living Room Nelson Zero Gravity Power Sofa with Power Headrest and Lumbar" [ref=e611] [cursor=pointer]:
+                  - /url: /products/hooker-furniture-living-room-nelson-zero-gravity-power-sofa-with-power-headrest-and-lumbar
+              - generic [ref=e613]: SS836-PHZL3-049
+          - generic [ref=e614]:
+            - generic [ref=e615]:
+              - link "loading":
+                - /url: /products/hooker-furniture-living-room-nelson-zero-gravity-power-recliner-with-power-headrest-and-lumbar-2
+                - generic [ref=e616] [cursor=pointer]:
+                  - alert "loading" [ref=e617] [cursor=pointer]
+                  - img [ref=e620] [cursor=pointer]
+              - button [ref=e629] [cursor=pointer]:
+                - img [ref=e630] [cursor=pointer]
+              - button "Add to compare" [ref=e632] [cursor=pointer]:
+                - img [ref=e633] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e634]:
+              - generic [ref=e635]: Hooker
+              - heading "Hooker Furniture Living Room Nelson Zero Gravity Power Recliner with Power Headrest and Lumbar" [level=3] [ref=e636]:
+                - link "Hooker Furniture Living Room Nelson Zero Gravity Power Recliner with Power Headrest and Lumbar" [ref=e637] [cursor=pointer]:
+                  - /url: /products/hooker-furniture-living-room-nelson-zero-gravity-power-recliner-with-power-headrest-and-lumbar-2
+              - generic [ref=e639]: SS836-PHZL1-070
+          - generic [ref=e640]:
+            - generic [ref=e641]:
+              - link "loading":
+                - /url: /products/esfera-small-sconce-1-3
+                - generic [ref=e642] [cursor=pointer]:
+                  - alert "loading" [ref=e643] [cursor=pointer]
+                  - img [ref=e646] [cursor=pointer]
+              - button [ref=e655] [cursor=pointer]:
+                - img [ref=e656] [cursor=pointer]
+              - button "Add to compare" [ref=e658] [cursor=pointer]:
+                - img [ref=e659] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e660]:
+              - generic [ref=e661]: Visual Comfort
+              - heading "Esfera Small Sconce" [level=3] [ref=e662]:
+                - link "Esfera Small Sconce" [ref=e663] [cursor=pointer]:
+                  - /url: /products/esfera-small-sconce-1-3
+              - generic [ref=e665]: KWWS19927N
+          - generic [ref=e666]:
+            - generic [ref=e667]:
+              - link "loading":
+                - /url: /products/wrap-sofa
+                - generic [ref=e668] [cursor=pointer]:
+                  - alert "loading" [ref=e669] [cursor=pointer]
+                  - img [ref=e672] [cursor=pointer]
+              - generic [ref=e681]: Best Seller
+              - button [ref=e682] [cursor=pointer]:
+                - img [ref=e683] [cursor=pointer]
+              - button "Add to compare" [ref=e685] [cursor=pointer]:
+                - img [ref=e686] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e687]:
+              - generic [ref=e688]: Ambella Home
+              - heading "Wrap Sofa" [level=3] [ref=e689]:
+                - link "Wrap Sofa" [ref=e690] [cursor=pointer]:
+                  - /url: /products/wrap-sofa
+              - generic [ref=e692]: 1272-01
+          - generic [ref=e693]:
+            - generic [ref=e694]:
+              - link "loading":
+                - /url: /products/kenji-sofa
+                - generic [ref=e695] [cursor=pointer]:
+                  - alert "loading" [ref=e696] [cursor=pointer]
+                  - img [ref=e699] [cursor=pointer]
+              - generic [ref=e708]: Hot Selling
+              - button [ref=e709] [cursor=pointer]:
+                - img [ref=e710] [cursor=pointer]
+              - button "Add to compare" [ref=e712] [cursor=pointer]:
+                - img [ref=e713] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e714]:
+              - generic [ref=e715]: Ambella Home
+              - heading "Kenji Sofa" [level=3] [ref=e716]:
+                - link "Kenji Sofa" [ref=e717] [cursor=pointer]:
+                  - /url: /products/kenji-sofa
+              - generic [ref=e719]: 1282-02
+          - generic [ref=e720]:
+            - generic [ref=e721]:
+              - link "loading":
+                - /url: /products/piazza-sofa
+                - generic [ref=e722] [cursor=pointer]:
+                  - alert "loading" [ref=e723] [cursor=pointer]
+                  - img [ref=e726] [cursor=pointer]
+              - button [ref=e735] [cursor=pointer]:
+                - img [ref=e736] [cursor=pointer]
+              - button "Add to compare" [ref=e738] [cursor=pointer]:
+                - img [ref=e739] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e740]:
+              - generic [ref=e741]: Ambella Home
+              - heading "Piazza Sofa" [level=3] [ref=e742]:
+                - link "Piazza Sofa" [ref=e743] [cursor=pointer]:
+                  - /url: /products/piazza-sofa
+              - generic [ref=e745]: 1472-03
+          - generic [ref=e746]:
+            - generic [ref=e747]:
+              - link "loading":
+                - /url: /products/crescent-sofa
+                - generic [ref=e748] [cursor=pointer]:
+                  - alert "loading" [ref=e749] [cursor=pointer]
+                  - img [ref=e752] [cursor=pointer]
+              - generic [ref=e761]: Best Seller
+              - button [ref=e762] [cursor=pointer]:
+                - img [ref=e763] [cursor=pointer]
+              - button "Add to compare" [ref=e765] [cursor=pointer]:
+                - img [ref=e766] [cursor=pointer]
+                - text: Add to compare
+            - generic [ref=e767]:
+              - generic [ref=e768]: Ambella Home
+              - heading "Crescent Sofa" [level=3] [ref=e769]:
+                - link "Crescent Sofa" [ref=e770] [cursor=pointer]:
+                  - /url: /products/crescent-sofa
+              - generic [ref=e772]: 1200-01
+      - generic [ref=e774]:
+        - generic [ref=e775]:
+          - heading "Bedroom" [level=2] [ref=e776]
+          - paragraph [ref=e777]: Transform your bedroom into a sanctuary of comfort and style. Discover furniture designed to help you rest, relax, and recharge every day.
+          - link "Visit Us Today!" [ref=e778] [cursor=pointer]:
+            - /url: /categories/bedroom
+            - button "Visit Us Today!" [ref=e779] [cursor=pointer]:
+              - generic [ref=e781] [cursor=pointer]: Visit Us Today!
+        - img "Bedroom" [ref=e783]
+      - generic [ref=e785]:
+        - heading "What Our Customers Say!" [level=2] [ref=e787]
+        - generic [ref=e789]:
+          - generic [ref=e790]:
+            - generic [ref=e791]:
+              - img "vimal" [ref=e793]
+              - generic [ref=e794]:
+                - heading "vimal" [level=4] [ref=e795]
+                - generic [ref=e796]:
+                  - img [ref=e798]
+                  - img [ref=e801]
+                  - img [ref=e804]
+                  - img [ref=e807]
+                  - img [ref=e810]
+            - paragraph [ref=e812]: I was a little nervous ordering a sofa online, but Mercato exceeded my expectations. The quality is amazing, and it’s the most comfortable couch I’ve ever owned!
+          - generic [ref=e813]:
+            - generic [ref=e814]:
+              - img "amal" [ref=e816]
+              - generic [ref=e817]:
+                - heading "amal" [level=4] [ref=e818]
+                - generic [ref=e819]:
+                  - img [ref=e821]
+                  - img [ref=e824]
+                  - img [ref=e827]
+                  - img [ref=e830]
+                  - img [ref=e833]
+            - paragraph [ref=e835]: The entire shopping process on Mercato was super smooth. From browsing to checkout, everything was simple and clear. Highly recommend it!
+          - generic [ref=e836]:
+            - generic [ref=e837]:
+              - img "ebison" [ref=e839]
+              - generic [ref=e840]:
+                - heading "ebison" [level=4] [ref=e841]
+                - generic [ref=e842]:
+                  - img [ref=e844]
+                  - img [ref=e847]
+                  - img [ref=e850]
+                  - img [ref=e853]
+                  - img [ref=e856]
+            - paragraph [ref=e858]: Mercato delivered my dining set ahead of schedule, and it arrived in perfect condition. The packaging was secure, and the delivery team was professional.
+          - generic [ref=e859]:
+            - generic [ref=e860]:
+              - img "riju" [ref=e862]
+              - generic [ref=e863]:
+                - heading "riju" [level=4] [ref=e864]
+                - generic [ref=e865]:
+                  - img [ref=e867]
+                  - img [ref=e870]
+                  - img [ref=e873]
+                  - img [ref=e876]
+                  - img [ref=e879]
+            - paragraph [ref=e881]: I had a few questions before placing my order, and the Mercato support team was very responsive and helpful. They made me feel confident about my purchase.
+          - generic [ref=e882]:
+            - generic [ref=e883]:
+              - img "ajitha" [ref=e885]
+              - generic [ref=e886]:
+                - heading "ajitha" [level=4] [ref=e887]
+                - generic [ref=e888]:
+                  - img [ref=e890]
+                  - img [ref=e893]
+                  - img [ref=e896]
+                  - img [ref=e899]
+                  - img [ref=e902]
+            - paragraph [ref=e904]: What I love about Mercato is the variety of modern and unique designs. My living room now looks like something straight out of a magazine!
+          - generic [ref=e905]:
+            - generic [ref=e906]:
+              - img "ajith" [ref=e908]
+              - generic [ref=e909]:
+                - heading "ajith" [level=4] [ref=e910]
+                - generic [ref=e911]:
+                  - img [ref=e913]
+                  - img [ref=e916]
+                  - img [ref=e919]
+                  - img [ref=e922]
+                  - img [ref=e925]
+            - paragraph [ref=e927]: I compared prices across several platforms, and Mercato gave me the best deal without compromising on quality. Excellent value for money.
+          - generic [ref=e928]:
+            - generic [ref=e929]:
+              - img "meghana" [ref=e931]
+              - generic [ref=e932]:
+                - heading "meghana" [level=4] [ref=e933]
+                - generic [ref=e934]:
+                  - img [ref=e936]
+                  - img [ref=e939]
+                  - img [ref=e942]
+                  - img [ref=e945]
+                  - img [ref=e948]
+            - paragraph [ref=e950]: The furniture came with clear instructions and was very easy to assemble. I did it myself in under an hour. Great experience!
+    - generic [ref=e951]:
+      - generic [ref=e952]:
+        - generic [ref=e953]:
+          - heading "Category" [level=3] [ref=e954]
+          - list [ref=e955]:
+            - listitem [ref=e956] [cursor=pointer]:
+              - link "Living Room" [ref=e957] [cursor=pointer]:
+                - /url: /categories/living-room
+            - listitem [ref=e958] [cursor=pointer]:
+              - link "Dining Room" [ref=e959] [cursor=pointer]:
+                - /url: /categories/dining-room
+            - listitem [ref=e960] [cursor=pointer]:
+              - link "Bedroom" [ref=e961] [cursor=pointer]:
+                - /url: /categories/bedroom
+            - listitem [ref=e962] [cursor=pointer]:
+              - link "Home Office" [ref=e963] [cursor=pointer]:
+                - /url: /categories/home-office
+            - listitem [ref=e964] [cursor=pointer]:
+              - link "Home Decor" [ref=e965] [cursor=pointer]:
+                - /url: /categories/home-decor
+        - generic [ref=e966]:
+          - heading "Brands" [level=3] [ref=e967]
+          - list [ref=e968]:
+            - listitem [ref=e969] [cursor=pointer]:
+              - link "Hooker" [ref=e970] [cursor=pointer]:
+                - /url: /brands/hooker
+            - listitem [ref=e971] [cursor=pointer]:
+              - link "Ambella Home" [ref=e972] [cursor=pointer]:
+                - /url: /brands/ambella-home
+            - listitem [ref=e973] [cursor=pointer]:
+              - link "Chaddock" [ref=e974] [cursor=pointer]:
+                - /url: /brands/chaddock
+            - listitem [ref=e975] [cursor=pointer]:
+              - link "Hickory White" [ref=e976] [cursor=pointer]:
+                - /url: /brands/hickory-white
+            - listitem [ref=e977] [cursor=pointer]:
+              - link "Sherrill Occasional" [ref=e978] [cursor=pointer]:
+                - /url: /brands/sherrill-occasional
+            - listitem [ref=e979] [cursor=pointer]:
+              - link "More.." [ref=e980] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e981]:
+          - heading "Contact Us" [level=3] [ref=e982]
+          - generic [ref=e983]:
+            - paragraph [ref=e984]: Digital Mesh Softech India P Limited
+            - paragraph [ref=e985]: CSEZ, Cochin, Kerala, India, 686595
+            - paragraph [ref=e986]: "9895969693"
+        - generic [ref=e987]:
+          - heading "Showroom" [level=3] [ref=e988]
+          - iframe [ref=e990]
+      - generic [ref=e991]: © 2025 Mecato. All Rights Reserved.
+  - region "Notifications (F8)":
+    - list
+```

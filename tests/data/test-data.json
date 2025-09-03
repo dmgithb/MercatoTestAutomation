@@ -1,0 +1,82 @@
+{
+  "environment": {
+    "baseUrl": "http://qa.mercato-retailer-jupiter.local/",
+    "timeout": 30000
+  },
+  "users": {
+    "validUser": {
+      "email": "${TEST_USER_EMAIL}",
+      "password": "${TEST_USER_PASSWORD}",
+      "firstName": "Test",
+      "lastName": "User"
+    },
+    "invalidUser": {
+      "email": "invalid@test.com",
+      "password": "wrongpassword"
+    }
+  },
+  "products": {
+    "searchTerms": {
+      "valid": ["sofa", "chair", "table", "ottoman", "desk"],
+      "invalid": ["xyz123", "nonexistent", "!@#$%"],
+      "empty": "",
+      "special": ["テスト", "中文", "español"]
+    }
+  },
+  "categories": {
+    "main": [
+      {
+        "name": "Living Room",
+        "url": "/categories/living-room",
+        "expectedProducts": 8767
+      },
+      {
+        "name": "Dining Room", 
+        "url": "/categories/dining-room",
+        "expectedProducts": 1000
+      },
+      {
+        "name": "Bedroom",
+        "url": "/categories/bedroom", 
+        "expectedProducts": 500
+      },
+      {
+        "name": "Home Office",
+        "url": "/categories/home-office",
+        "expectedProducts": 300
+      },
+      {
+        "name": "Home Decor",
+        "url": "/categories/home-decor",
+        "expectedProducts": 200
+      }
+    ]
+  },
+  "brands": [
+    {
+      "name": "Ambella Home",
+      "url": "/brands/ambella-home",
+      "productCount": 365
+    },
+    {
+      "name": "Chaddock", 
+      "url": "/brands/chaddock",
+      "productCount": 500
+    },
+    {
+      "name": "Chelsea House",
+      "url": "/brands/chelsea-house", 
+      "productCount": 547
+    },
+    {
+      "name": "Flexsteel",
+      "url": "/brands/flexsteel",
+      "productCount": 1168
+    },
+    {
+      "name": "Hooker",
+      "url": "/brands/hooker",
+      "productCount": 1098
+    }
+  ]
+}
