@@ -297,36 +297,32 @@ jobs:
         run: |
           if [ -n "$SLACK_WEBHOOK_URL" ]; then
             curl -X POST -H 'Content-type: application/json' \
-              --data '{
-                "channel": "#test-automation",
-                "username": "GitHub Actions",
-                "icon_emoji": ":white_check_mark:",
-                "attachments": [
+              -d "{
+                \"channel\": \"#test-automation\",
+                \"username\": \"GitHub Actions\",
+                \"icon_emoji\": \":white_check_mark:\",
+                \"text\": \"✅ Playwright Tests PASSED\",
+                \"attachments\": [
                   {
-                    "color": "good",
-                    "title": "✅ Playwright Tests PASSED",
-                    "fields": [
+                    \"color\": \"good\",
+                    \"fields\": [
                       {
-                        "title": "Branch",
-                        "value": "${{ github.ref_name }}",
-                        "short": true
+                        \"title\": \"Branch\",
+                        \"value\": \"${{ github.ref_name }}\",
+                        \"short\": true
                       },
                       {
-                        "title": "Author", 
-                        "value": "${{ github.actor }}",
-                        "short": true
-                      },
-                      {
-                        "title": "Workflow",
-                        "value": "<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Details>",
-                        "short": false
+                        \"title\": \"Author\", 
+                        \"value\": \"${{ github.actor }}\",
+                        \"short\": true
                       }
                     ],
-                    "text": "📊 All tests completed successfully!\n\n📋 Test Summary:\n• Critical Tests: ✅ Passed\n• Full Test Suite: ✅ Passed\n• Browsers: Chrome, Firefox, Safari, Edge + Mobile"
+                    \"text\": \"All tests completed successfully! Critical Tests: Passed, Full Test Suite: Passed\"
                   }
                 ]
-              }' \
+              }" \
               "$SLACK_WEBHOOK_URL"
+            echo "Success notification sent"
           else
             echo "⚠️ SLACK_WEBHOOK_URL not configured - skipping success notification"
           fi
@@ -337,47 +333,47 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           if [ -n "$SLACK_WEBHOOK_URL" ]; then
+            # Determine which tests failed
+            CRITICAL_STATUS="${{ needs.critical-tests.result == 'success' && 'Passed' || 'Failed' }}"
+            FULL_STATUS="${{ needs.full-tests.result == 'success' && 'Passed' || 'Failed' }}"
+            
             curl -X POST -H 'Content-type: application/json' \
-              --data '{
-                "channel": "#test-automation", 
-                "username": "GitHub Actions",
-                "icon_emoji": ":x:",
-                "attachments": [
+              -d "{
+                \"channel\": \"#test-automation\", 
+                \"username\": \"GitHub Actions\",
+                \"icon_emoji\": \":x:\",
+                \"text\": \"❌ Playwright Tests FAILED\",
+                \"attachments\": [
                   {
-                    "color": "danger",
-                    "title": "❌ Playwright Tests FAILED",
-                    "fields": [
+                    \"color\": \"danger\",
+                    \"fields\": [
                       {
-                        "title": "Branch",
-                        "value": "${{ github.ref_name }}",
-                        "short": true
+                        \"title\": \"Branch\",
+                        \"value\": \"${{ github.ref_name }}\",
+                        \"short\": true
                       },
                       {
-                        "title": "Author",
-                        "value": "${{ github.actor }}",
-                        "short": true
+                        \"title\": \"Author\",
+                        \"value\": \"${{ github.actor }}\",
+                        \"short\": true
                       },
                       {
-                        "title": "Critical Tests",
-                        "value": "${{ needs.critical-tests.result == 'success' && '✅ Passed' || '❌ Failed' }}",
-                        "short": true
+                        \"title\": \"Critical Tests\",
+                        \"value\": \"$CRITICAL_STATUS\",
+                        \"short\": true
                       },
                       {
-                        "title": "Full Test Suite", 
-                        "value": "${{ needs.full-tests.result == 'success' && '✅ Passed' || '❌ Failed' }}",
-                        "short": true
-                      },
-                      {
-                        "title": "Action Required",
-                        "value": "<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|🔍 Check Details>",
-                        "short": false
+                        \"title\": \"Full Test Suite\", 
+                        \"value\": \"$FULL_STATUS\",
+                        \"short\": true
                       }
                     ],
-                    "text": "🚨 Immediate attention required!"
+                    \"text\": \"Immediate attention required! Check workflow details for more information.\"
                   }
                 ]
-              }' \
+              }" \
               "$SLACK_WEBHOOK_URL"
+            echo "Failure notification sent"
           else
             echo "⚠️ SLACK_WEBHOOK_URL not configured - skipping failure notification"
           fi
@@ -397,52 +393,50 @@ jobs:
             # Set color and status text based on results
             if [[ "$OVERALL_STATUS" == "success" ]]; then
               COLOR="good"
-              STATUS_TEXT="COMPLETED ✅"
+              STATUS_TEXT="COMPLETED"
             else
               COLOR="warning" 
-              STATUS_TEXT="FAILED ❌"
+              STATUS_TEXT="FAILED"
             fi
             
+            # Send notification with simple JSON
             curl -X POST -H 'Content-type: application/json' \
-              --data '{
-                "channel": "#test-automation",
-                "username": "GitHub Actions",
-                "icon_emoji": ":dart:",
-                "attachments": [
+              -d "{
+                \"channel\": \"#test-automation\",
+                \"username\": \"GitHub Actions\",
+                \"icon_emoji\": \":dart:\",
+                \"text\": \"Manual Test Execution - $STATUS_TEXT\",
+                \"attachments\": [
                   {
-                    "color": "'$COLOR'",
-                    "title": "🎯 Manual Test Execution - '$STATUS_TEXT'",
-                    "fields": [
+                    \"color\": \"$COLOR\",
+                    \"fields\": [
                       {
-                        "title": "Branch",
-                        "value": "${{ github.ref_name }}",
-                        "short": true
+                        \"title\": \"Branch\",
+                        \"value\": \"${{ github.ref_name }}\",
+                        \"short\": true
                       },
                       {
-                        "title": "Triggered by",
-                        "value": "${{ github.actor }}",
-                        "short": true
+                        \"title\": \"Triggered by\",
+                        \"value\": \"${{ github.actor }}\",
+                        \"short\": true
                       },
                       {
-                        "title": "Browser",
-                        "value": "${{ github.event.inputs.browser || 'all' }}",
-                        "short": true
+                        \"title\": \"Browser\",
+                        \"value\": \"${{ github.event.inputs.browser || 'all' }}\",
+                        \"short\": true
                       },
                       {
-                        "title": "Test Suite",
-                        "value": "${{ github.event.inputs.test_suite || 'full' }}",
-                        "short": true
-                      },
-                      {
-                        "title": "Results",
-                        "value": "<https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Details>",
-                        "short": false
+                        \"title\": \"Test Suite\",
+                        \"value\": \"${{ github.event.inputs.test_suite || 'full' }}\",
+                        \"short\": true
                       }
                     ]
                   }
                 ]
-              }' \
+              }" \
               "$SLACK_WEBHOOK_URL"
+              
+            echo "Manual trigger notification sent successfully"
           else
             echo "⚠️ SLACK_WEBHOOK_URL not configured - skipping manual trigger notification"
           fi
