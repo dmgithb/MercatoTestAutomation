@@ -238,6 +238,45 @@ The enhanced `playwright.config.ts` includes:
 - **Type-safe configuration**: TypeScript validation for all settings
 - **Performance monitoring**: Configurable timeouts and thresholds
 
+### CI Environment Compatibility
+
+The framework intelligently handles different execution environments:
+
+#### **Local Development Environment**
+- Full health checks with local BASE_URL (`qa.mercato-retailer-jupiter.local`)
+- Extended timeouts for debugging and development
+- Visual browser mode available for test development
+
+#### **CI/CD Environment**
+- Automatic CI environment detection (`process.env.CI`)
+- Graceful handling of inaccessible local development URLs
+- Skip global setup with `SKIP_GLOBAL_SETUP=true` environment variable
+- Shorter timeouts optimized for CI performance
+- Headless browser execution for better resource utilization
+
+#### **Environment Variables for CI**
+
+```bash
+# Skip global setup in CI environments
+SKIP_GLOBAL_SETUP=true
+
+# CI environment indicator
+CI=true
+
+# Optional: Use demo URL for CI testing when local URLs not accessible
+# BASE_URL=https://demo.playwright.dev/
+
+# CI optimizations
+HEADLESS=true
+TIMEOUT=30000
+```
+
+The framework automatically detects CI environments and:
+- ✅ Continues gracefully when health checks fail
+- ✅ Uses shorter timeouts for better performance  
+- ✅ Skips local development URL dependencies
+- ✅ Provides detailed logging for CI troubleshooting
+
 ## 📈 CI/CD Pipeline
 
 ### GitHub Actions Workflow
